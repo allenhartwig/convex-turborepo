@@ -1,10 +1,18 @@
-import { Button } from "ui";
+import { useQuery } from "@myapp/convex";
+import { generateWord } from "@myapp/utils";
+import { useEffect, useState } from "react";
 
-export default function Web() {
+export default function Home() {
+  const convexWord = useQuery("speak");
+  const [clientWord, setClientWord] = useState("");
+  useEffect(() => {
+    setClientWord(generateWord());
+  });
   return (
-    <div>
-      <h1>Web</h1>
-      <Button />
-    </div>
+    <>
+      Convex Word: {convexWord || "loading..."}
+      <br />
+      Client Word: {clientWord || "loading..."}
+    </>
   );
 }

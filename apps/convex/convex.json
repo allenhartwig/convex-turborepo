@@ -1,0 +1,7 @@
+{
+  "project": "convex-project",
+  "team": "my-convex-team",
+  "prodUrl": "https://my-url.convex.cloud",
+  "functions": "convex/",
+  "authInfo": []
+}

@@ -1,0 +1,15 @@
+{
+  "name": "@myapp/convex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "convex dev"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@myapp/utils": "*",
+    "convex": "^0.10.0"
+  }
+}
